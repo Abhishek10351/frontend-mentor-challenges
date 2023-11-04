@@ -1,0 +1,264 @@
+/* Fonts */
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    font-weight: 500;
+}
+* {
+    font-family: "Hanken Grotesk";
+    /* outline: 1px solid red; */
+}
+/* Base Designs */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    display: flex;
+    height: 360px;
+    width: 500px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 0px;
+    box-shadow: 10px 10px 80px #cccccc;
+    border-radius: 20px;
+}
+
+/* Cards */
+
+.card {
+    width: 50%;
+}
+.result-card {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-color: orangered;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: lightcoral; */
+    padding: 20px 20px;
+}
+/* Result */
+.result {
+    border-radius: 10em;
+    height: 120px;
+    padding: 10px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, .4));
+    color: hsl(241, 100%, 89%);
+}
+.final-result {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+}
+.result-info {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+/* Headers */
+.result-header {
+    font-weight: 600;
+    color: hsl(221, 100%, 96%);
+}
+.summary-header {
+    align-self: flex-start;
+    color: hsl(224, 30%, 27%);
+    margin: 10px;
+}
+/* Headings */
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Scores */
+.subjects {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.subject {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.subject-type {
+    font-size: 14px;
+    margin-right: 30px;
+    /* align-self: flex-start; */
+    /* justify-self: flex-start; */
+    display: flex;
+    /* align-items: center; */
+}
+.subject-grade {
+    justify-self: flex-end;
+    justify-content: end;
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+    margin-left: 20px;
+}
+.subject-score {
+    color: black;
+}
+.result-description {
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    text-align: center;
+}
+/* Topic colors */
+.reaction {
+    background: hsla(0, 100%, 67%, 0.15);
+}
+.memory {
+    background: hsla(39, 100%, 56%, 0.15);
+}
+.verbal {
+    background: hsla(166, 100%, 37%, 0.15);
+}
+.visual {
+    background: hsla(234, 85%, 45%, 0.15);
+}
+.reaction .subject-name {
+    color: hsl(0, 100%, 67%);
+}
+.memory .subject-name {
+    color: hsl(39, 100%, 56%);
+}
+.verbal .subject-name {
+    color: hsl(166, 100%, 37%);
+}
+.visual .subject-name {
+    color: hsl(234, 85%, 45%);
+}
+/* icon */
+.icon {
+    margin-right: 5px;
+}
+/* Button */
+
+.button {
+    border-radius: 2em;
+    color: white;
+    background: hsl(224, 30%, 27%);
+    padding: 10px 60px;
+    border-style: none;
+}
+.button:hover {
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.button:focus {
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    margin-top: 20px;
+}
+
+/* Small Screens */
+@media (max-width: 375px) {
+    /* Base Designs */
+
+    body {
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+    }
+    main {
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 0px;
+        border-radius: 0px;
+    }
+    /* Cards */
+    .card {
+        height: 50%;
+        padding: 20px 20px;
+        border-radius: 0px;
+    }
+    .result-card {
+        border-radius: 0px 0px 1.8em 1.8em;
+        height: calc(50%);
+        padding: 10px 10px;
+        margin: 0px;
+        width: calc(100% - 20px);
+    }
+
+    .summary-card {
+        height: calc(50%+10px);
+        padding: 9px 0px;
+        width: calc(100%);
+        box-shadow: none;
+    }
+    /* Result */
+
+    .result-description {
+        text-align: center;
+        height: 60px;
+        width: 70%;
+    }
+    /* Headers */
+
+    .summary-header {
+        margin-left: 25px;
+    }
+    /* Subjects */
+    .subjects {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        width: 80%;
+    }
+
+    .subject {
+        width: calc(100%);
+        margin: 15px 0px;
+        padding: 10px 0px;
+    }
+    .subject-type {
+        align-self: flex-start;
+        padding: 0px;
+    }
+    .subject-grade {
+        align-self: flex-end;
+        padding: 0px;
+        margin: 0px 10px;
+    }
+    /* Icons */
+    .icon {
+        margin: 0px 5px;
+    }
+    /* Button */
+    .button {
+        margin: 0px;
+        padding: 10px 0px;
+        width: 100%;
+    }
+}
