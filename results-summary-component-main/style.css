@@ -182,7 +182,7 @@ h2 {
 }
 
 /* Small Screens */
-@media (max-width: 375px) {
+@media (width<= 576px) {
     /* Base Designs */
 
     body {
