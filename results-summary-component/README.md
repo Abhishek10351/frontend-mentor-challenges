@@ -8,4 +8,4 @@ This is a challenge from [Frontend Mentor](https://www.frontendmentor.io/). The 
 
 ## Site URL
 
-This is the link to the site [(solution-link)](https://abhishek10351.github.io/frontend-mentor-challenges/results-summary-component-main/)
+This is the link to the site [(solution-link)](https://abhishek10351.github.io/frontend-mentor-challenges/results-summary-component/)
