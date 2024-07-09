@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Intro component with sign up form</title>
+        <link
+            href="https://fonts.googleapis.com/css2?&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./app.js" defer></script>
+    </head>
+    <body class="d-flex justify-content-center align-items-center">
+        <main
+            class="d-flex justify-content-around align-items-center flex-column py-3 my-3 flex-md-row w-100"
+        >
+            <section class="info-section text-white mt-5 mx- px-2 text-start ">
+                <h1
+                    class="heading fs-4 text-center mb-4 text-md-start"
+                >
+                    Learn to code by watching others
+                </h1>
+                <p class="text-white text-center text-md-start">
+                    See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how
+                    developers think is invaluable.
+                </p>
+            </section>
+            <section
+                class="form-section flex items-center flex-column hidde justify-around p-0 px-3 h-auto"
+            >
+                <h2
+                    class="form-heading fs-6 px-2 mb-5 fw-normal rounded-3 fw-light fs-md-3"
+                >
+                    <span class="fw-bold">Try it free 7 days</span> then $20/mo.
+                    thereafter
+                </h2>
+                <form
+                    class="flex items-center flex-col justify-between bg-white form-container needs-validation rounded-3 p-4 pt-5 w-auto h-auto"
+                    novalidate
+                >
+                    <div class="mb-4">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="First Name"
+                            required
+                        />
+                        <div class="invalid-feedback text-end">
+                            First Name cannot be empty
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Last Name"
+                            required
+                        />
+                        <div class="invalid-feedback text-end">
+                            Last Name cannot be empty
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email Address"
+                            pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                            required
+                        />
+                        <div class="invalid-feedback text-end">
+                            Looks like this is not an email
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Password"
+                            required
+                        />
+                        <div class="invalid-feedback text-end">
+                            Password cannot be empty
+                        </div>
+                    </div>
+                    <button class="submit-button w-100 mb-4">
+                        Claim your free trial
+                    </button>
+                    <footer class="tos-info mb-3 text-center">
+                        By clicking the button, you are agreeing to our
+                        <a class="tos">Terms and Services</a>
+                    </footer>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
